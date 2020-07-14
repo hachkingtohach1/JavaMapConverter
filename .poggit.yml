@@ -1,0 +1,8 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/korado531m7/JavaMapConverter
+build-by-default: true
+branches:
+- master
+projects:
+  JavaMapConverter:
+    path: ""
+...
