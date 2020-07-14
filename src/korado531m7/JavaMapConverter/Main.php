@@ -58,6 +58,14 @@ class Main extends PluginBase implements Listener{
         return $this->getConfig()->get('enable-async-mode', true);
     }
 
+    public function isEnabledSignConvert() : bool{
+        return $this->getConfig()->get('enable-convert-sign', true);
+    }
+
+    public function isEnabledRemoveAllEntities() : bool{
+        return $this->getConfig()->get('remove-all-entities', true);
+    }
+
     public static function addProcessing() : void{
         ++self::$runningCount;
         ++self::$allCount;

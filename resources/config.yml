@@ -16,3 +16,15 @@ enable-async-mode: true
 enable-output-progress: false
 
 # ----------------------------------------------------------------------------
+
+# Convert Sign
+# If set to true, texts in json format written in sign will be converted
+enable-convert-sign: true
+
+# ----------------------------------------------------------------------------
+
+# Remove Entities
+# If set to true, entities in chunks are removed
+remove-all-entities: true
+
+# ----------------------------------------------------------------------------

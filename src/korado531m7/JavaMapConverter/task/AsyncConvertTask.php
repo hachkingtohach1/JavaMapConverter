@@ -10,8 +10,7 @@
 namespace korado531m7\JavaMapConverter\task;
 
 
-use korado531m7\JavaMapConverter\data\BlockId;
-use korado531m7\JavaMapConverter\data\Face;
+use korado531m7\JavaMapConverter\BlockFixer;
 use korado531m7\JavaMapConverter\Main;
 use pocketmine\level\format\Chunk;
 use pocketmine\scheduler\AsyncTask;
@@ -27,15 +26,7 @@ class AsyncConvertTask extends AsyncTask{
 
     public function onRun(){
         $chunk = Chunk::fastDeserialize($this->chunk);
-        for($x = 0; $x < 4 * 4; ++$x){
-            for($z = 0; $z < 4 * 4; ++$z){
-                for($y = 0; $y < $chunk->getMaxY(); ++$y){
-                    $oldBlockId = $chunk->getBlockId($x, $y, $z);
-                    $newBlockFace = Face::getNewFace($oldBlockId, $chunk->getBlockData($x, $y, $z));
-                    $chunk->setBlock($x, $y, $z, BlockId::getNewBlockId($oldBlockId), $newBlockFace);
-                }
-            }
-        }
+        BlockFixer::convert($chunk);
         $this->setResult($chunk->fastSerialize());
     }
 
