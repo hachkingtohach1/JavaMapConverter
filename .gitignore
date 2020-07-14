@@ -1,3 +1,4 @@
 .idea/*
 composer.*
 vendor/*
+*.DS_Store
