@@ -4,7 +4,7 @@
 namespace korado531m7\JavaMapConverter\data;
 
 /*
- * JavaMapConverter v1.0.2 by korado531m7
+ * JavaMapConverter v1.0.3 by korado531m7
  * Developer: korado531m7
  * Copyright (C) 2020 korado531m7
  * Licensed under MIT (https://github.com/korado531m7/JavaMapConverter/blob/master/LICENSE)
@@ -51,7 +51,6 @@ class BlockId{
             case JavaBlockIds::OBSERVER:
                 return BedrockBlockIds::OBSERVER;
             case JavaBlockIds::WHITE_SHULKER_BOX:
-                return BedrockBlockIds::UNDYED_SHULKER_BOX;
             case JavaBlockIds::ORANGE_SHULKER_BOX:
             case JavaBlockIds::MAGENTA_SHULKER_BOX:
             case JavaBlockIds::LIGHT_BLUE_SHULKER_BOX:

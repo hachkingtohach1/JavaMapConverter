@@ -1,7 +1,7 @@
 <?php
 
 /*
- * JavaMapConverter v1.0.2 by korado531m7
+ * JavaMapConverter v1.0.3 by korado531m7
  * Developer: korado531m7
  * Copyright (C) 2020 korado531m7
  * Licensed under MIT (https://github.com/korado531m7/JavaMapConverter/blob/master/LICENSE)
@@ -37,34 +37,34 @@ class Face{
                 switch($face){
                     case 0:
                         return 3;
-                    case 2:
-                        return 1;
                     case 1:
                         return 2;
+                    case 2:
+                        return 1;
                     case 3:
                         return 0;
                     case 4:
                         return 11;
-                    case 7:
-                        return 8;
                     case 5:
                         return 10;
                     case 6:
                         return 9;
+                    case 7:
+                        return 8;
                     case 8:
                         return 7;
-                    case 10:
-                        return 5;
                     case 9:
                         return 6;
+                    case 10:
+                        return 5;
                     case 11:
                         return 4;
                     case 12:
                         return 15;
-                    case 14:
-                        return 13;
                     case 13:
                         return 14;
+                    case 14:
+                        return 13;
                     case 15:
                         return 12;
                 }
@@ -73,14 +73,14 @@ class Face{
             case BedrockBlockIds::STONE_BUTTON:
             case BedrockBlockIds::WOODEN_BUTTON:
                 switch($face){
-                    case 4:
-                        return 2;
-                    case 5:
-                        return 1;
                     case 1:
                         return 5;
                     case 2:
                         return 4;
+                    case 4:
+                        return 2;
+                    case 5:
+                        return 1;
                 }
                 break;
 
@@ -109,6 +109,39 @@ class Face{
                         return 5;
                 }
                 break;
+
+            case JavaBlockIds::WHITE_SHULKER_BOX:
+                return 0;
+            case JavaBlockIds::ORANGE_SHULKER_BOX:
+                return 1;
+            case JavaBlockIds::MAGENTA_SHULKER_BOX:
+                return 2;
+            case JavaBlockIds::LIGHT_BLUE_SHULKER_BOX:
+                return 3;
+            case JavaBlockIds::YELLOW_SHULKER_BOX:
+                return 4;
+            case JavaBlockIds::LIME_SHULKER_BOX:
+                return 5;
+            case JavaBlockIds::PINK_SHULKER_BOX:
+                return 6;
+            case JavaBlockIds::GRAY_SHULKER_BOX:
+                return 7;
+            case JavaBlockIds::LIGHT_GRAY_SHULKER_BOX:
+                return 8;
+            case JavaBlockIds::CYAN_SHULKER_BOX:
+                return 9;
+            case JavaBlockIds::PURPLE_SHULKER_BOX:
+                return 10;
+            case JavaBlockIds::BLUE_SHULKER_BOX:
+                return 11;
+            case JavaBlockIds::BROWN_SHULKER_BOX:
+                return 12;
+            case JavaBlockIds::GREEN_SHULKER_BOX:
+                return 13;
+            case JavaBlockIds::RED_SHULKER_BOX:
+                return 14;
+            case JavaBlockIds::BLACK_SHULKER_BOX:
+                return 15;
 
             case JavaBlockIds::SPRUCE_FENCE:
                 return 1;
