@@ -18,7 +18,7 @@ use pocketmine\scheduler\AsyncTask;
 use pocketmine\Server;
 
 class AsyncConvertTask extends AsyncTask{
-    /** @var Chunk */
+    /** @var string */
     private $chunk;
 
     public function __construct(Chunk $chunk){
