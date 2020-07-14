@@ -1,0 +1,18 @@
+# JavaMapConverter Configuration File
+# Author: korado531m7
+
+# ----------------------------------------------------------------------------
+
+# Asynchronous Mode
+# If you set to true, blocks conversion will be run asynchronously to reduce lag
+
+enable-async-mode: true
+
+# ----------------------------------------------------------------------------
+
+# Output Mode
+# If you set to true, the progress of conversion will be printed to console like a spamming XD
+
+enable-output-progress: false
+
+# ----------------------------------------------------------------------------
