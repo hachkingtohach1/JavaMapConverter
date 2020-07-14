@@ -35,6 +35,9 @@ class Main extends PluginBase implements Listener{
         if($this->isOutputProgress()){
             $this->getLogger()->warning('Output Progress mode is enabled. All converting progress will be print to console.');
         }
+        if($this->getServer()->getProperty('ticks-per.autosave', 6000) <= 0){ //6000 is from Server.php
+            $this->getLogger()->warning('Autosave is turned off. It may restore from the not converted chunks while converting');
+        }
     }
 
     public function onDisable(){

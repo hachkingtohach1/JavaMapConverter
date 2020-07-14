@@ -84,6 +84,32 @@ class Face{
                 }
                 break;
 
+            case JavaBlockIds::WHITE_GLAZED_TERRACOTTA:
+            case JavaBlockIds::ORANGE_GLAZED_TERRACOTTA:
+            case JavaBlockIds::MAGENTA_GLAZED_TERRACOTTA:
+            case JavaBlockIds::LIGHT_BLUE_GLAZED_TERRACOTTA:
+            case JavaBlockIds::YELLOW_GLAZED_TERRACOTTA:
+            case JavaBlockIds::LIME_GLAZED_TERRACOTTA:
+            case JavaBlockIds::PINK_GLAZED_TERRACOTTA:
+            case JavaBlockIds::GRAY_GLAZED_TERRACOTTA:
+            case JavaBlockIds::LIGHT_GRAY_GLAZED_TERRACOTTA:
+            case JavaBlockIds::CYAN_GLAZED_TERRACOTTA:
+            case JavaBlockIds::PURPLE_GLAZED_TERRACOTTA:
+            case JavaBlockIds::BLUE_GLAZED_TERRACOTTA:
+            case JavaBlockIds::BROWN_GLAZED_TERRACOTTA:
+            case JavaBlockIds::GREEN_GLAZED_TERRACOTTA:
+            case JavaBlockIds::RED_GLAZED_TERRACOTTA:
+            case JavaBlockIds::BLACK_GLAZED_TERRACOTTA:
+                switch($face){
+                    case 0:
+                        return 3;
+                    case 1:
+                        return 4;
+                    case 3:
+                        return 5;
+                }
+                break;
+
             case JavaBlockIds::SPRUCE_FENCE:
                 return 1;
             case JavaBlockIds::BIRCH_FENCE:
