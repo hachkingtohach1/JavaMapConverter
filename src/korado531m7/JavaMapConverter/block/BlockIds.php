@@ -24,11 +24,11 @@ interface BlockIds{
     const ACTIVATOR_RAIL = 157;
     const DROPPER = 158;
     const BARRIER = 166;
-    const SPRUCE_FENCE = 188; //Ignore
-    const BIRCH_FENCE = 189; //Ignore
-    const JUNGLE_FENCE = 190; //Ignore
-    const DARK_OAK_FENCE = 191; //Ignore
-    const ACACIA_FENCE = 192; //Ignore
+    const SPRUCE_FENCE = 188;
+    const BIRCH_FENCE = 189;
+    const JUNGLE_FENCE = 190;
+    const DARK_OAK_FENCE = 191;
+    const ACACIA_FENCE = 192;
     const END_ROD = 198;
     const CHORUS_PLANT = 199;
     const PURPUR_PILLAR = 202; //Ignore

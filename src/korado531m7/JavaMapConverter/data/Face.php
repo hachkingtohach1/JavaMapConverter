@@ -19,7 +19,6 @@ class Face{
     public static function getNewFace(int $blockId, int $face) : int{
         switch($blockId){
             case BedrockBlockIds::DOUBLE_STONE_SLAB:
-                /** @noinspection PhpMissingBreakStatementInspection */
             case BedrockBlockIds::STONE_SLAB:
                 switch($face){
                     case 6:
@@ -72,7 +71,6 @@ class Face{
                 break;
 
             case BedrockBlockIds::STONE_BUTTON:
-                /** @noinspection PhpMissingBreakStatementInspection */
             case BedrockBlockIds::WOODEN_BUTTON:
                 switch($face){
                     case 4:
